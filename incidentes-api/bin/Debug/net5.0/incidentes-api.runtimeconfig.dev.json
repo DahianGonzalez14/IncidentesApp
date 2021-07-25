@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\DAHIA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DAHIA\\.nuget\\packages"
+    ]
+  }
+}

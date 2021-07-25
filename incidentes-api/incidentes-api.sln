@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "incidentes-api", "incidentes-api.csproj", "{8E638F0A-5BA5-467A-A43E-31B3E28E682C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E638F0A-5BA5-467A-A43E-31B3E28E682C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E638F0A-5BA5-467A-A43E-31B3E28E682C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E638F0A-5BA5-467A-A43E-31B3E28E682C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E638F0A-5BA5-467A-A43E-31B3E28E682C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31E77A2B-B08B-4020-AA57-75C62DD4C915}
+	EndGlobalSection
+EndGlobal
