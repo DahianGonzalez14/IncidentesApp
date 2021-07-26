@@ -18,9 +18,9 @@ Este módulo contiene los procesos centrales del sistema, basicamente aqui se co
 
 5.0.104
 
-# Instalacion
+## Instalacion
 
-Para ANGULAR
+### Para ANGULAR
 
 Muevase al siguiente folder: IncidentesApp\incidentes-front
 
@@ -30,9 +30,11 @@ npm install
 
 ng serve -o
 
-Para .NET CORE
+### Para .NET CORE
 
 Muevase al siguiente folder: IncidentesApp\incidentes-api
+
+Recuerde Modificar el archivo appsettings.Development.json y cambiar la direccion de su base de datos
 
 Luego abra el cmd desde esa ruta y corra los siguientes comandos:
 
