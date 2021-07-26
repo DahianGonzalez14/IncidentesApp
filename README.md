@@ -24,11 +24,14 @@ Para ANGULAR
 Muevase al siguiente folder: IncidentesApp\incidentes-front
 
 Luego abra el cmd desde esa ruta y corra los siguientes comandos:
+
 npm install
+
 ng serve -o
 
 Para .NET CORE
 Muevase al siguiente folder: IncidentesApp\incidentes-api
 
 Luego abra el cmd desde esa ruta y corra los siguientes comandos:
+
 dotnet run
