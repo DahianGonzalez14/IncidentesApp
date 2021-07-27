@@ -51,7 +51,9 @@
                             <td>{{getPrioridadById(incidente.prioridadId)}}</td>
                             <td>{{getDepartamentoById(incidente.departamentoId)}}</td>
                             <td>{{incidente.titulo}}</td>
-                            <td class="fixed-text-1">{{incidente.descripcion}}</td>
+                            <td class="fixed-text-1">{{incidente.descripcion}}
+                                <button *ngIf="needSeeButton(incidente.descripcion)" class="btn btn-primary align-see-button" (click)="verMas(incidente.descripcion)">Ver mas</button>
+                            </td>
                             <td>{{ (incidente.fechaCierre == null) ? 'No aplica': incidente.fechaCierre | date }}</td>
                             <td>{{ (incidente.comentarioCierre == null) ? 'No aplica' : incidente.comentarioCierre}}</td>
                             <td>{{getNombreStatusByCode(incidente.estatus)}}</td>

@@ -7,6 +7,7 @@ import { SlaComponent } from './components/administracion/Sla/Sla.component';
 import { UsuariosComponent } from './components/administracion/usuarios/usuarios.component';
 import { AsignarIncidenteComponent } from './components/incidentes/asignar-incidente/asignar-incidente.component';
 import { CerrarIncidentesComponent } from './components/incidentes/cerrar-incidentes/cerrar-incidentes.component';
+import { ComentarIncidenteComponent } from './components/incidentes/comentar-incidente/comentar-incidente.component';
 import { HistorialSolicitudesComponent } from './components/incidentes/historial-solicitudes/historial-solicitudes.component';
 import { SolicitudIncidenteComponent } from './components/incidentes/solicitud-incidente/solicitud-incidente.component';
 import { VerMisIncidentesComponent } from './components/incidentes/ver-mis-incidentes/ver-mis-incidentes.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
       {path: 'incidentes/cerrarIncidente', component: CerrarIncidentesComponent  },
       {path: 'incidentes/historialSolicitudes', component: HistorialSolicitudesComponent  },
       {path: 'incidentes/verMisIncidentes', component: VerMisIncidentesComponent  },
-      {path: 'incidentes/verTodosIncidentes', component: VerTodosIncidentesComponent  }
+      {path: 'incidentes/verTodosIncidentes', component: VerTodosIncidentesComponent  },
+      {path: 'incidentes/comentarIncidente', component: ComentarIncidenteComponent  }
     ]
   },
   

@@ -57,7 +57,7 @@ export class IncidenteService {
 
   //comentarios
   getComentariosByIncidenteId(id: any){
-    return this.http.get(this.baseUrl + 'incidente/GetComentariosByIncidenteId?incidenteId='+id);
+    return this.http.get(this.baseUrl + 'comentario/GetComentarioByIncidenteId?incidenteId='+id);
   }
 
   createComentario(model: any){

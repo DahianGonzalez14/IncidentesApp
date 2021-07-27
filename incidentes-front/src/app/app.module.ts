@@ -33,6 +33,8 @@ import { AgregarPrioridadComponent } from './components/administracion/prioridad
 import { EditarPrioridadComponent } from './components/administracion/prioridad/editar-prioridad/editar-prioridad.component';
 import { AgregarIncidenteComponent } from './components/incidentes/solicitud-incidente/agregar-incidente/agregar-incidente.component';
 import { EditarIncidenteComponent } from './components/incidentes/solicitud-incidente/editar-incidente/editar-incidente.component';
+import { ComentarIncidenteComponent } from './components/incidentes/comentar-incidente/comentar-incidente.component';
+import { ComentariosComponent } from './components/comentarios/comentarios.component';
 
 @NgModule({
   declarations: [				
@@ -62,7 +64,9 @@ import { EditarIncidenteComponent } from './components/incidentes/solicitud-inci
     AgregarPrioridadComponent,
     EditarPrioridadComponent,
     AgregarIncidenteComponent,
-    EditarIncidenteComponent
+    EditarIncidenteComponent,
+    ComentarIncidenteComponent,
+    ComentariosComponent
    ],
   imports: [
     BrowserModule,

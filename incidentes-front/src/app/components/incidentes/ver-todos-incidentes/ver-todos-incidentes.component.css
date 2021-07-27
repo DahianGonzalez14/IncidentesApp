@@ -1,6 +1,5 @@
 .fixed-text-1 {
     max-width: 20vw;
-    width: 30vw;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -63,4 +62,10 @@ table th {
 
 .margin-modal {
     margin-top: 100px;
+}
+
+.align-see-button {
+    padding: 2px;
+    display: block;
+    margin-top: 3px;
 }

@@ -5,6 +5,7 @@ import { Prioridad } from 'src/app/models/Prioridad.mode';
 import { Usuario } from 'src/app/models/Usuario.model';
 import { AdministracionService } from 'src/app/services/administracion.service';
 import { IncidenteService } from 'src/app/services/incidente.service';
+import Swal from 'sweetalert2';
 import * as XLSX from 'xlsx';
 
 @Component({
@@ -42,6 +43,7 @@ export class HistorialSolicitudesComponent implements OnInit {
       this.loading = false;
       if(this.listadoHistorialIncidente.length > 0){
         this.isfull = true;
+        console.log("entro");
       }
     });
   }
@@ -138,6 +140,20 @@ export class HistorialSolicitudesComponent implements OnInit {
       XLSX.writeFile(wb, this.fileName);
   }
 
+  needSeeButton(descripcion: string){
+    let cantidadCaracteres = descripcion.length;
+    if(cantidadCaracteres > 49){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  verMas(descripcion: string){
+    Swal.fire({
+      title: descripcion
+    });
+  }
 
 
 }

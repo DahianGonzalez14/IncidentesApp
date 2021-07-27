@@ -37,6 +37,7 @@
                             <th>Titulo</th>
                             <th>Descripción</th>
                             <th>Estatus</th>
+                            <th>Comentarios</th>
                             <th>Modificar</th>
                             <th>Eliminar</th>
                         </tr>
@@ -50,24 +51,30 @@
                             <td>{{getPrioridadById(incidente.prioridadId)}}</td>
                             <td>{{getDepartamentoById(incidente.departamentoId)}}</td>
                             <td>{{incidente.titulo}}</td>
-                            <td class="fixed-text-1">{{incidente.descripcion}}</td>
+                            <td class="fixed-text-1">{{incidente.descripcion}}
+                                <button *ngIf="needSeeButton(incidente.descripcion)" class="btn btn-primary align-see-button" (click)="verMas(incidente.descripcion)">Ver mas</button>
+                            </td>
                             <td>{{getNombreStatusByCode(incidente.estatus)}}</td>
                             <td>
-                                <a class="btn btn-success btn-icon-split" (click)="abrirModalEditar(incidente)">
-                                    <span class="icon text-white-50">
-                              <i class="fas fa-pencil-alt"></i>
-                          </span>
-                                    <span class="text">Modificar</span>
+                                <a class="btn btn-primary">
+                                    <span class="text" (click)="verComentarios(incidente.incidenteId)">Ver</span>
                                 </a>
                             </td>
                             <td>
-                                <a class="btn btn-danger btn-icon-split" (click)="eliminarIncidente(incidente.incidenteId,idUsuarioSesion)">
+                                <a class="btn btn-success" (click)="abrirModalEditar(incidente)">
                                     <span class="icon text-white-50">
-                                <i class="fas fa-trash"></i>
-                            </span>
-                                    <span class="text">Eliminar</span>
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
                                 </a>
                             </td>
+                            <td>
+                                <a class="btn btn-danger" (click)="eliminarIncidente(incidente.incidenteId,idUsuarioSesion)">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+
                         </tr>
                     </tbody>
                 </table>
@@ -85,3 +92,22 @@
 <div class="modal fade bd-example-modal-lg margin-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalEditIncidente">
     <app-editar-incidente [incidenteActual]="incidenteActual" [listadoPrioridadesActivas]="listadoPrioridadesActivas" [listadoDepartamentosActivos]="listadoDepartamentosActivos" (newItemEvent)="refrescarIncidentes()"></app-editar-incidente>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Comentarios</h5>
+                <button type="button" class="close" (click)="cerrarModal2()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body custom-scroll-dt">
+
+                <app-comentarios [listadoComentarios]="listadoComentarios"></app-comentarios>
+
+            </div>
+        </div>
+    </div>

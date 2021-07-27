@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Comentario } from 'src/app/models/Comentario.mode';
 import { Departamento } from 'src/app/models/Departamento.model';
 import { Incidente } from 'src/app/models/Incidente.model';
 import { Prioridad } from 'src/app/models/Prioridad.mode';
@@ -26,6 +27,7 @@ export class SolicitudIncidenteComponent implements OnInit {
   public listadoUsuarios: Usuario[] = [];
   public listadoPrioridades: Prioridad[] = [];
   public listadoDepartamentos: Departamento[] = [];
+  public listadoComentarios: Comentario[] = [];
   public isfull: boolean = false;
   constructor(private admintracionService: AdministracionService, private incidenteService: IncidenteService) { }
 
@@ -202,6 +204,32 @@ export class SolicitudIncidenteComponent implements OnInit {
         )
       }
     });
+  }
+
+  needSeeButton(descripcion: string){
+    let cantidadCaracteres = descripcion.length;
+    if(cantidadCaracteres > 49){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  verMas(descripcion: string){
+    Swal.fire({
+      title: descripcion
+    });
+  }
+
+  verComentarios(incidenteId: any){
+    this.incidenteService.getComentariosByIncidenteId(incidenteId).subscribe( (res: Comentario[]) => {
+      this.listadoComentarios = res;
+      $('#exampleModalCenter2').modal('show');
+    });
+  }
+
+  cerrarModal2(){
+    $('#exampleModalCenter2').modal('hide');
   }
 
   

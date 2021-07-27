@@ -115,4 +115,17 @@ export class AdministracionService {
     return this.http.delete(this.baseUrl + 'prioridad/Delete?id='+id+'&idUsuarioElimina='+idUsuarioElimina);
   }
 
+  //comentarios
+  getComentarios(){
+    return this.http.get(this.baseUrl + 'comentario');
+  }
+
+  getComentariosByIncidenteId(id: any){
+    return this.http.get(this.baseUrl + 'comentarios/GetComentarioByIncidenteId?incidenteId='+id);
+  }
+
+  createComentario(model: any){
+    return this.http.post(this.baseUrl + 'comentario/Create', model);
+  }
+
 }
