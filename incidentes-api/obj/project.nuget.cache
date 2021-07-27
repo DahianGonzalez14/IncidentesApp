@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ck1eiPc3L+aI4ZVADKYbNJbY3E08BA72W7cPZzjWeAloUpJm4rJ3FIYQUoSHkDwtiJfGdntzjJ6tziURNz4osw==",
+  "dgSpecHash": "XHfPXibyfhQ5UaYSJgg2OHbb9wBba9HUlw5Iek76EpqpPcRB3PslGGguFkqZRXQHEOpjXVnF8+vAOojopa11pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\Proyecto Final\\incidentes-api\\incidentes-api.csproj",
+  "projectFilePath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\IncidentesApp\\incidentes-api\\incidentes-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DAHIA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DAHIA\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.7\\microsoft.aspnetcore.authentication.jwtbearer.5.0.7.nupkg.sha512",

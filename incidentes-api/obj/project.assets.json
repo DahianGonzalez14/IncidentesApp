@@ -5566,11 +5566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\Proyecto Final\\incidentes-api\\incidentes-api.csproj",
+      "projectUniqueName": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\IncidentesApp\\incidentes-api\\incidentes-api.csproj",
       "projectName": "incidentes-api",
-      "projectPath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\Proyecto Final\\incidentes-api\\incidentes-api.csproj",
+      "projectPath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\IncidentesApp\\incidentes-api\\incidentes-api.csproj",
       "packagesPath": "C:\\Users\\DAHIA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\Proyecto Final\\incidentes-api\\obj\\",
+      "outputPath": "C:\\Users\\DAHIA\\OneDrive\\Escritorio\\IncidentesApp\\incidentes-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DAHIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
